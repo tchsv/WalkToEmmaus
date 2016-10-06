@@ -8,9 +8,23 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { DataService } from './services/data.service';
+import { CommunityComponent } from './community/community.component';
+import { ClusterComponent } from './cluster/cluster.component';
+import { TeamComponent } from './team/team.component';
+import { WalkComponent } from './walk/walk.component';
+import { CatsComponent } from './cats/cats.component';
+import { TeamManagementComponent } from './team-management/team-management.component';
+import { TeamSelectionComponent } from './team-selection/team-selection.component';
 
 const routing = RouterModule.forRoot([
     { path: '',      component: HomeComponent },
+    { path: 'team', component: TeamComponent },
+    { path: 'community', component: CommunityComponent },
+    { path: 'cluster', component: ClusterComponent },
+    { path: 'walk', component: WalkComponent },
+    { path: 'teammgt', component: TeamManagementComponent },
+    { path: 'teamselect', component: TeamSelectionComponent },
+    { path: 'cat', component: CatsComponent },
     { path: 'about', component: AboutComponent }
 ]);
 
@@ -18,7 +32,14 @@ const routing = RouterModule.forRoot([
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    CommunityComponent,
+    ClusterComponent,
+    TeamComponent,
+    WalkComponent,
+    CatsComponent,
+    TeamManagementComponent,
+    TeamSelectionComponent
   ],
   imports: [
     BrowserModule,
